@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 15px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: brown;
+  color: white;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  align-items: center;
+}
+li {
+  padding: 5px;
+}
+li:hover {
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: white;
+  color: brown;
+  box-shadow: 3px 5px rgba(0, 0, 0, 0.1);
+}

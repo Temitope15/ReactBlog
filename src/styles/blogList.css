@@ -1,0 +1,50 @@
+.Blog-list {
+  padding: 10px 15px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.Blog-item h1,
+.pages {
+  color: brown;
+}
+.pages:hover {
+  text-decoration: underline;
+}
+.Blog-item {
+  border-bottom: 1px solid burlywood;
+  padding: 0 15px;
+  border-radius: 10px;
+}
+.Blog-item:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.author {
+  font-weight: 700;
+}
+button {
+  background-color: brown;
+  color: white;
+  padding: 8px;
+  margin: 10px 0;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 9px;
+}
+button:hover {
+  background-color: white;
+  border: 1px solid brown;
+  color: brown;
+  cursor: pointer;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
