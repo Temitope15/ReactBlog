@@ -1,4 +1,14 @@
+//import necessary components
 import "../styles/blogList.css";
+
+/**
+ * Bloglist - creates a lists of blog previews
+ * @blogs: the array we are looping through
+ * @section: props for the h2 tag, where we append a section title
+ * @handleDelete: function to delete selected blog preview
+ * 
+ * return: the blog preview lists in jsx form
+ */
 const BlogList = ({ blogs, section, handleDelete }) => {
   return (
     <div className="Blog-list">
@@ -13,7 +23,7 @@ const BlogList = ({ blogs, section, handleDelete }) => {
           </div>
           <div className="footer">
             <p className="author">written by: {blog.author}</p>
-            <button onClick={() => handleDelete(blog.id)}>Delete Blog</button>
+            <button onClick={()=>handleDelete(blog.id)}>Delete Blog</button>
           </div>
         </div>
       ))}

@@ -1,5 +1,12 @@
+//import necessary components and hooks
 import { useState, useEffect } from "react";
 import BlogList from "../component/blogList";
+
+/**
+ * Home - function to display blog preview in a list form
+ * 
+ * Return: BlogList component 
+ */
 
 const Home = () => {
   const [blogs, setBlog] = useState([
@@ -33,13 +40,13 @@ const Home = () => {
     },
   ]);
 
-  const handleDelete = (id) => {
-    const newBlog = blogs.filter((blog) => blog.id !== id);
-    setBlog(newBlog);
-  };
-  useEffect(() => {
-    console.log("use effect ran");
-  }, []);
+ const handleDelete = (id)=>{
+  const newArr = blogs.filter(blog => blog.id !== id);
+  setBlog(newArr)
+ }
+  useEffect(()=>{
+    console.log('useEffect ran')
+  }, [])
   return (
     <div>
       <BlogList blogs={blogs} section="All Blogs" handleDelete={handleDelete} />
